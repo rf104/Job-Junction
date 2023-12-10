@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtl.AdminDash">
+   <children>
+      <AnchorPane prefHeight="433.0" prefWidth="857.0">
+         <children>
+            <BorderPane layoutX="405.0" layoutY="174.0" prefHeight="788.0" prefWidth="1356.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="43.0" prefWidth="1356.0" styleClass="semi-top-form" stylesheets="@dash_board.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Photos/img-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="66.0" layoutY="13.0" prefHeight="46.0" prefWidth="167.0" text="Job Junction">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1314.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Photos/cancel.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="1313.0" layoutY="21.0" mnemonicParsing="false" onAction="#close" opacity="0.0" prefHeight="35.0" prefWidth="35.0" />
+                     </children></AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="728.0" prefWidth="366.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="83.0" layoutY="140.0" prefHeight="728.0" prefWidth="366.4" styleClass="nav-form" stylesheets="@dash_board.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="180.0" fitWidth="186.0" layoutX="93.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photos/user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="221.0" prefHeight="20.0" prefWidth="210.0" text="Welcome" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="241.0" prefHeight="20.0" prefWidth="210.0" text="Admins!" textFill="#0cf299">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="143.4000244140625" layoutX="175.0" layoutY="291.0" startX="-143.00001525878906" stroke="WHITE" />
+                              <Button fx:id="home_btn" layoutX="90.0" layoutY="381.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" text="Home" />
+                              <Button fx:id="Add_empl_Btn" layoutX="90.0" layoutY="436.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" text="Employee" />
+                              <Button fx:id="EmployerBtn" layoutX="87.0" layoutY="493.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" text="Employer" />
+                              <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="104.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photos/check-out.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="153.0" layoutY="646.0" text="LOGOUT" textFill="RED">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="logout" layoutX="104.0" layoutY="639.0" mnemonicParsing="false" onAction="#LOGOUT" opacity="0.0" prefHeight="50.0" prefWidth="178.0" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="Home_form" layoutX="14.0" layoutY="17.0" prefHeight="698.0" prefWidth="1057.0" stylesheets="@dash_board.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane layoutX="-1.0" prefHeight="274.0" prefWidth="1106.0" stylesheets="@dash_board.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="20.0" layoutY="23.0" prefHeight="234.0" prefWidth="456.0" styleClass="card" stylesheets="@dash_board.css">
+                                       <children>
+                                          <ImageView fitHeight="126.0" fitWidth="181.0" layoutX="37.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Photos/staff.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="107.0" layoutY="144.0" prefHeight="76.0" prefWidth="243.0" text="Total Employee" textFill="#ededed">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="home_totalEmpl" alignment="CENTER_RIGHT" layoutX="260.0" layoutY="46.0" prefHeight="73.0" prefWidth="156.0" text="0" textFill="#ededed">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="50.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="522.0" layoutY="26.0" prefHeight="238.0" prefWidth="435.0" styleClass="card" stylesheets="@dash_board.css">
+                                       <children>
+                                          <ImageView fitHeight="121.0" fitWidth="125.0" layoutX="31.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Photos/businessman.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="123.0" layoutY="160.0" prefHeight="59.0" prefWidth="235.0" text="Total Employer" textFill="#ededed">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="home_totalEmployer" alignment="CENTER_RIGHT" layoutX="262.0" layoutY="43.0" prefHeight="82.0" prefWidth="139.0" text="0" textFill="#ededed">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="50.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <BarChart fx:id="bar_chart" layoutX="155.0" layoutY="313.0" prefHeight="330.0" prefWidth="737.0" title="Job Junction">
+                                <xAxis>
+                                  <CategoryAxis fx:id="X" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="Y" label="Accounts" side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="AddEmpl_form" layoutX="144.0" layoutY="114.0" prefHeight="725.6" prefWidth="1044.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="13.0" layoutY="10.0" prefHeight="702.0" prefWidth="1054.0" stylesheets="@dash_board.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <Label layoutX="66.0" layoutY="458.0" text="User Name:">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="addEmployee_Name_2" layoutX="195.0" layoutY="452.0" prefHeight="31.0" prefWidth="234.0" promptText="Username" />
+                                    <Label layoutX="41.0" layoutY="551.0" text="Phone Number:">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="97.0" layoutY="506.0" text="Email:">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="addEmployee_email_2" layoutX="195.0" layoutY="501.0" prefHeight="31.0" prefWidth="234.0" promptText="Email Address" />
+                                    <TextField fx:id="addEmployee_phn_2" layoutX="195.0" layoutY="546.0" prefHeight="31.0" prefWidth="234.0" promptText="Phone Number" />
+                                    <Label layoutX="465.0" layoutY="458.0" text="Date of Birth">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="addEmployee_DOB_2" layoutX="605.0" layoutY="454.0" prefHeight="31.0" prefWidth="234.0" promptText="Date of Birth" />
+                                    <Label layoutX="498.0" layoutY="505.0" text="Gender">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="addEmployee_Gender_2" layoutX="608.0" layoutY="502.0" prefHeight="31.0" prefWidth="234.0" promptText="Gender" />
+                                    <AnchorPane layoutX="873.0" layoutY="445.0" prefHeight="173.0" prefWidth="149.0" stylesheets="@dash_board.css">
+                                       <styleClass>
+                                          <String fx:value="shadow" />
+                                          <String fx:value="white-bg" />
+                                       </styleClass>
+                                       <children>
+                                          <ImageView fx:id="addEmployee_img" fitHeight="177.0" fitWidth="153.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button fx:id="addEmployee_ImportBtn" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" text="Import">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                    <Button fx:id="addEmployee_AddBtn" layoutX="877.0" layoutY="645.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" text="ADD" />
+                                    <Button fx:id="addEmployee_UpdateBtn" layoutX="742.0" layoutY="646.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" text="Update" />
+                                    <Button fx:id="addEmployee_clrBtn" layoutX="463.0" layoutY="646.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" text="Clear" />
+                                    <Button fx:id="addEmployee_dltBtn" layoutX="606.0" layoutY="646.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" text="Delete" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="23.0" layoutY="20.0" prefHeight="684.0" prefWidth="1031.0" stylesheets="@dash_board.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="addEmployee_table" layoutX="22.0" layoutY="77.0" prefHeight="548.0" prefWidth="972.0">
+                                      <columns>
+                                        <TableColumn fx:id="addEmployee_employeeID" prefWidth="108.00000762939453" text="ID" />
+                                        <TableColumn fx:id="addEmployee_Name" prefWidth="168.0" text="User Name" />
+                                          <TableColumn fx:id="addEmployee_Gender" prefWidth="86.4000244140625" text="Gender" />
+                                          <TableColumn fx:id="addEmployee_phn" prefWidth="149.59994506835938" text="Phone Number" />
+                                          <TableColumn fx:id="addEmployee_email" prefWidth="247.19989013671875" text="Email Address" />
+                                          <TableColumn fx:id="addEmployee_DOB" minWidth="0.0" prefWidth="210.4000244140625" text="Date of Birth" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="addEmployee_search" layoutX="61.0" layoutY="21.0" prefHeight="30.0" prefWidth="274.0" promptText="Search" />
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Photos/seo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Employer_home" layoutX="29.0" layoutY="27.0" prefHeight="684.0" prefWidth="1002.0" stylesheets="@dash_board.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="employer_table" layoutX="17.0" layoutY="95.0" prefHeight="566.0" prefWidth="972.0">
+                                <columns>
+                                  <TableColumn fx:id="employer_ID" prefWidth="50.666748046875" text="ID" />
+                                  <TableColumn fx:id="employer_Name" prefWidth="99.73322296142578" text="Name" />
+                                    <TableColumn fx:id="employer_CpnyName" prefWidth="127.20001220703125" text="Company Name" />
+                                    <TableColumn fx:id="employer_Year" prefWidth="125.06658935546875" text="Establishment Year" />
+                                    <TableColumn fx:id="employer_Add" prefWidth="177.33334350585938" text="Address" />
+                                    <TableColumn fx:id="employer_tradeLc" prefWidth="135.73345947265625" text="Trade Lc" />
+                                    <TableColumn fx:id="employer_Email" minWidth="0.0" prefWidth="138.1334228515625" text="Email" />
+                                    <TableColumn fx:id="employer_type" minWidth="0.0" prefWidth="110.6666259765625" text="Type" />
+                                </columns>
+                              </TableView>
+                              <TextField fx:id="employer_Search" layoutX="109.0" layoutY="42.0" prefHeight="26.0" prefWidth="358.0" promptText="Search" />
+                              <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="44.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photos/seo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

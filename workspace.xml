@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dcb8279-9438-460b-bcc7-127dad3d71dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfreechart-1.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ojdbc14-10.2.0.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/About_me.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/AdminDash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/ChatEmployer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Employer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/EmployerDashBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Employer_work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/FAQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Job_news.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Job_offers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Main_dash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/OTP_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/OTP_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Search_job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Send_email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/SignupEmployeers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Singup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/Update_profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dtl/hello_calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2W6DasShLSvPjqZonDS5PZk7XZz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "D:/Java Code/DTL/src/main/java/com/example/dtl",
+    "last_opened_file_path": "D:/Java Code/final_loader_mist (1)/final_loader_mist",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.dtl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Downloads_2\New folder\arik\DTL\src\main\resources" />
+      <recent name="E:\Downloads_2\New folder\arik\DTL\src\main\resources\com\example\dtl" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.dtl" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.dtl.Main" />
+      <module name="DTL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dcb8279-9438-460b-bcc7-127dad3d71dd" name="Changes" comment="" />
+      <created>1696044204544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696044204544</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/dtl/Server.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

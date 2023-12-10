@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtl.Job_news">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3000.0" prefWidth="1264.0" style="-fx-background-color: #ffa600;">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="1264.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Photos/912993-quotes-typography-text-quote-motivational-inspirational.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="52.0" text="Welcome to the portal of explore">
+               <font>
+                  <Font name="Times New Roman Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="326.0" prefHeight="46.0" prefWidth="168.0" text="All Jobs:" textFill="#f2f2f2">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="35.0" layoutY="372.0" prefHeight="512.0" prefWidth="1208.0">
+               <content>
+                  <VBox fx:id="jobs" prefHeight="10000.0" prefWidth="1208.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="40.0" layoutY="916.0" prefHeight="32.0" prefWidth="149.0" text="Hot Jobs:" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font></Label>
+            <ScrollPane layoutX="37.0" layoutY="986.0" prefHeight="512.0" prefWidth="1208.0">
+               <content>
+                  <VBox fx:id="hot" prefHeight="10000.0" prefWidth="1208.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="45.0" layoutY="1532.0" prefHeight="18.0" prefWidth="237.0" text="Challenging Job:" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font></Label>
+            <ScrollPane layoutX="40.0" layoutY="1586.0" prefHeight="512.0" prefWidth="1208.0">
+               <content>
+                  <VBox fx:id="hard" prefHeight="10000.0" prefWidth="1208.0" />
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

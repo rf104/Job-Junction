@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtl.Employer_work">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="516.0" layoutY="243.0" prefHeight="769.6" prefWidth="1366.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="56.0" prefWidth="1366.0" style="-fx-background-color: #34ebb4;" BorderPane.alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="74.0" fitWidth="88.0" layoutX="-2.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Photos/img-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="75.0" layoutY="15.0" text="Job Junction" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <left>
+                        <AnchorPane prefHeight="662.0" prefWidth="302.0" stylesheets="@dash_board.css" BorderPane.alignment="CENTER">
+                            <styleClass>
+                                <String fx:value="nav-form" />
+                                <String fx:value="shadow" />
+                            </styleClass>
+                            <children>
+                                <Button layoutX="43.0" layoutY="270.0" mnemonicParsing="false" text="Create a Post">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="43.0" layoutY="329.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="173.0" text="Candidates">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="43.0" layoutY="387.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="173.0" text="Employer Profile">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Photos/businessman.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="CENTER" layoutX="51.0" layoutY="216.0" textFill="#efe8e8">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="26.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="63.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Photos/check-out.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="127.0" layoutY="552.0" prefHeight="41.0" prefWidth="92.0" text="LOGOUT" textFill="#ff0101">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="logout" layoutX="61.0" layoutY="546.0" mnemonicParsing="false" onAction="#LOGOUT1" opacity="0.0" prefHeight="55.0" prefWidth="162.0" />
+                                <Label alignment="CENTER" layoutX="69.0" layoutY="184.0" prefHeight="31.0" prefWidth="131.0" text="Welcome," textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="26.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="name_employer" alignment="CENTER" layoutX="69.0" layoutY="216.0" prefHeight="31.0" prefWidth="125.0" textFill="#f4f4f4">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="26.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </left>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ScrollPane prefHeight="674.0" prefWidth="1041.0" vvalue="0.25">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1700.0" prefWidth="1026.0">
+                                            <children>
+                                                <ImageView fitHeight="356.0" fitWidth="1032.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true">
+                                                    <image>
+                                                        <Image url="@Photos/andromeda-galaxy-way-ik.jpg" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label layoutX="27.0" layoutY="377.0" prefHeight="52.0" prefWidth="284.0" text="Fill Up the Details:">
+                                                    <font>
+                                                        <Font size="35.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="72.0" layoutY="478.0" prefHeight="28.0" prefWidth="82.0" text="Name:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="556.0" layoutY="475.0" prefHeight="39.0" prefWidth="95.0" text="Dignity:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="73.0" layoutY="546.0" prefHeight="39.0" prefWidth="138.0" text="Workplace:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="em_name" layoutX="186.0" layoutY="476.0" prefHeight="43.0" prefWidth="329.0" />
+                                                <TextField fx:id="em_dignity" layoutX="682.0" layoutY="471.0" prefHeight="44.0" prefWidth="319.0" />
+                                                <TextField fx:id="em_workplace" layoutX="137.0" layoutY="596.0" prefHeight="59.0" prefWidth="842.0" />
+                                                <Label layoutX="79.0" layoutY="696.0" prefHeight="39.0" prefWidth="166.0" text="Job category:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="em_catagory" layoutX="274.0" layoutY="690.0" prefHeight="51.0" prefWidth="570.0" />
+                                                <Label layoutX="82.0" layoutY="794.0" prefHeight="39.0" prefWidth="110.0" text="Job Title:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="em_title" layoutX="246.0" layoutY="786.0" prefHeight="51.0" prefWidth="702.0" />
+                                                <Label layoutX="77.0" layoutY="973.0" prefHeight="39.0" prefWidth="192.0" text="Job Info Details:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextArea fx:id="em_info" layoutX="123.0" layoutY="1037.0" prefHeight="551.0" prefWidth="855.0" />
+                                                <Label layoutX="83.0" layoutY="892.0" prefHeight="39.0" prefWidth="176.0" text="Job Hardness:">
+                                                    <font>
+                                                        <Font size="27.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="em_hardness" layoutX="295.0" layoutY="884.0" prefHeight="51.0" prefWidth="672.0" />
+                                                <Button layoutX="491.0" layoutY="1619.0" mnemonicParsing="false" onAction="#send_the_post" prefHeight="46.0" prefWidth="111.0" text="Send">
+                                                    <font>
+                                                        <Font size="24.0" />
+                                                    </font>
+                                                </Button>
+                                                <TextField fx:id="em_mail" layoutX="371.0" layoutY="391.0" prefHeight="26.0" prefWidth="379.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </ScrollPane>
+                                <AnchorPane layoutX="26.0" layoutY="26.0" prefHeight="647.0" prefWidth="1016.0" visible="false">
+                                    <children>
+                                        <TableView layoutX="50.0" layoutY="34.0" prefHeight="427.0" prefWidth="919.0">
+                                            <columns>
+                                                <TableColumn prefWidth="168.00000762939453" text="Name" />
+                                                <TableColumn prefWidth="180.800048828125" text="Education" />
+                                                <TableColumn prefWidth="154.400146484375" text="Phone Number" />
+                                                <TableColumn prefWidth="154.400146484375" text="Email" />
+                                                <TableColumn prefWidth="259.20012207031255" text="Address" />
+                                            </columns>
+                                        </TableView>
+                                        <Label layoutX="135.0" layoutY="535.0" text="Want to Communicate">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField layoutX="403.0" layoutY="536.0" prefHeight="26.0" prefWidth="244.0" promptText="Name" />
+                                        <Button layoutX="688.0" layoutY="533.0" mnemonicParsing="false" text="Message">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="20.0" layoutY="13.0" prefHeight="670.0" prefWidth="1026.0" stylesheets="@dash_board.css" visible="false">
+                                    <styleClass>
+                                        <String fx:value="white-bg" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="68.0" layoutY="66.0" prefHeight="23.0" prefWidth="298.0" text="Profile">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="TOP_RIGHT" layoutX="51.0" layoutY="109.0" prefHeight="23.0" prefWidth="126.0" text="Name">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="TOP_RIGHT" layoutX="36.0" layoutY="141.0" prefHeight="23.0" prefWidth="164.0" text="Company Name">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="30.0" layoutY="24.0" prefHeight="659.0" prefWidth="1014.0" stylesheets="@dash_board.css" visible="false">
+                                    <children>
+                                        <TextField layoutX="71.0" layoutY="535.0" prefHeight="84.0" prefWidth="762.0" />
+                                        <Button layoutX="879.0" layoutY="543.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="105.0" text="Send">
+                                            <font>
+                                                <Font name="ArtifaktElement-Black" size="28.0" />
+                                            </font>
+                                        </Button>
+                                        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="70.0" layoutY="98.0" prefHeight="403.0" prefWidth="906.0">
+                                            <content>
+                                                <VBox prefHeight="200.0" prefWidth="130.0" />
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

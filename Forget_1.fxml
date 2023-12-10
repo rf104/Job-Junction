@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtl.OTP_2">
+   <children>
+      <ImageView fitHeight="1279.0" fitWidth="1905.0" layoutX="-223.0" layoutY="-118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photos/square-glitch-chaos-banner-abstract-4k-im.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="599.0" layoutY="159.0" prefHeight="518.0" prefWidth="480.0" style="-fx-background-color: #333333;">
+         <children>
+            <ImageView fitHeight="139.0" fitWidth="135.0" layoutX="-15.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/logo-removebg-preview2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="givenOTP" layoutX="90.0" layoutY="277.0" prefHeight="33.0" prefWidth="310.0" promptText="Type the given OTP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="184.0" fitWidth="260.0" layoutX="158.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/otp.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="219.0" layoutY="359.0" mnemonicParsing="false" onAction="#switchTOforget_3" style="-fx-background-color: #FFDB58;" text="Verify">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="Mesage" alignment="CENTER" layoutX="91.0" layoutY="223.0" prefHeight="18.0" prefWidth="310.0" textFill="#fc0000">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
